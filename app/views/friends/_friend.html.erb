@@ -1,27 +1,14 @@
 <div id="<%= dom_id friend %>">
-  <p>
-    <strong>First name:</strong>
-    <%= friend.first_name %>
-  </p>
 
-  <p>
-    <strong>Last name:</strong>
-    <%= friend.last_name %>
-  </p>
-
-  <p>
-    <strong>Email:</strong>
-    <%= friend.email %>
-  </p>
-
-  <p>
-    <strong>Phone:</strong>
-    <%= friend.phone %>
-  </p>
-
-  <p>
-    <strong>Twitter:</strong>
-    <%= friend.twitter %>
-  </p>
-
+  <div class="jumbotron mt-4 p-5 bg-light text-dark rounded">
+    <h1 class="display-4"><%= friend.first_name %> <%= friend.last_name %></h1>
+    <p class="lead"></p>
+    <hr class="my-4">
+    <p>
+      <p><strong>Email:</strong><%= friend.email %></p>
+      <p><strong>Phone:</strong><%= friend.phone %></p>
+      <p><strong>Twitter:</strong><%= friend.twitter %></p>
+    </p>
+  </div>
+  
 </div>
