@@ -44,6 +44,9 @@ gem "bootsnap", require: false
 
 gem "lib"
 
+# Flexible authentication solution for Rails with Warden
+gem 'devise', '~> 4.8', '>= 4.8.1'
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
