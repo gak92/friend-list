@@ -37,6 +37,11 @@
   </div>
 
   <div class="mb-3">
+    <%= form.label :user_id, style: "display: block", class: "form-label" %>
+    <%= form.number_field :user_id, id: :friend_user_id, class: "form-control", value: current_user.id, type: :hidden %>
+  </div>
+
+  <div class="mb-3">
     <%= form.submit class: "btn btn-primary" %>
   </div>
 <% end %>
